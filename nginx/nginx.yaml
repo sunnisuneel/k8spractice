@@ -1,0 +1,10 @@
+apiVersion: v1
+Kind: pod
+metadata:
+  name: nginx
+spec:
+  containers:
+    - image: nginx:1.23
+      name: nginx-container
+      Ports:
+        - ContainerPort: 80
